@@ -1,0 +1,6 @@
+CREATE PROC SP_Get_Total_Users
+AS
+SET NOCOUNT ON
+BEGIN
+    SELECT COUNT(id) AS Total FROM Usuario WHERE active = 1;
+END

@@ -1,0 +1,6 @@
+CREATE PROC SP_Get_Estados
+AS
+SET NOCOUNT ON
+BEGIN
+    SELECT id, [name] FROM Estado;
+END
